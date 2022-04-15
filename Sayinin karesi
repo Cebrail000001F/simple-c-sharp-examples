@@ -1,0 +1,10 @@
+
+static void Main(string[] args)
+        {
+            Console.Write("Sayı  : ");
+            int sayi = Convert.ToInt32(Console.ReadLine());
+            int sonuc = sayi * sayi;
+            Console.WriteLine(sayi+ " sayısının karesi : "+sonuc);
+            
+            Console.ReadKey();
+        }
