@@ -1,5 +1,5 @@
 ﻿
-namespace WinFormsApp1
+namespace c_sharp_form_ornegi
 {
     partial class Form1
     {
@@ -29,97 +29,128 @@ namespace WinFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBoxMessage = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.comboBoxArabalar = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textboxyazısı = new System.Windows.Forms.Label();
+            this.yazıyıLabeleEKle = new System.Windows.Forms.Button();
+            this.girisYap = new System.Windows.Forms.Button();
+            this.textBoxKullanıcıAdı = new System.Windows.Forms.TextBox();
+            this.textBoxSifre = new System.Windows.Forms.TextBox();
+            this.labelSonuc = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // textBox1
             // 
-            this.button1.BackColor = System.Drawing.Color.OliveDrab;
-            this.button1.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.button1.Location = new System.Drawing.Point(174, 257);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 71);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "ButtonMesajYaz";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.textBox1.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBox1.Location = new System.Drawing.Point(33, 51);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(352, 29);
+            this.textBox1.TabIndex = 2;
             // 
-            // textBoxMessage
+            // textboxyazısı
             // 
-            this.textBoxMessage.BackColor = System.Drawing.Color.Khaki;
-            this.textBoxMessage.ForeColor = System.Drawing.Color.Blue;
-            this.textBoxMessage.Location = new System.Drawing.Point(413, 182);
-            this.textBoxMessage.Name = "textBoxMessage";
-            this.textBoxMessage.Size = new System.Drawing.Size(291, 23);
-            this.textBoxMessage.TabIndex = 1;
+            this.textboxyazısı.AutoSize = true;
+            this.textboxyazısı.Location = new System.Drawing.Point(42, 181);
+            this.textboxyazısı.Name = "textboxyazısı";
+            this.textboxyazısı.Size = new System.Drawing.Size(52, 21);
+            this.textboxyazısı.TabIndex = 3;
+            this.textboxyazısı.Text = "label3";
             // 
-            // button2
+            // yazıyıLabeleEKle
             // 
-            this.button2.Location = new System.Drawing.Point(174, 173);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(174, 66);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "buttonDelete";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.yazıyıLabeleEKle.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.yazıyıLabeleEKle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.yazıyıLabeleEKle.Location = new System.Drawing.Point(116, 100);
+            this.yazıyıLabeleEKle.Name = "yazıyıLabeleEKle";
+            this.yazıyıLabeleEKle.Size = new System.Drawing.Size(92, 61);
+            this.yazıyıLabeleEKle.TabIndex = 4;
+            this.yazıyıLabeleEKle.Text = "button1";
+            this.yazıyıLabeleEKle.UseVisualStyleBackColor = false;
             // 
-            // comboBoxArabalar
+            // girisYap
             // 
-            this.comboBoxArabalar.FormattingEnabled = true;
-            this.comboBoxArabalar.Location = new System.Drawing.Point(469, 406);
-            this.comboBoxArabalar.Name = "comboBoxArabalar";
-            this.comboBoxArabalar.Size = new System.Drawing.Size(121, 23);
-            this.comboBoxArabalar.TabIndex = 3;
+            this.girisYap.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.girisYap.Location = new System.Drawing.Point(665, 316);
+            this.girisYap.Name = "girisYap";
+            this.girisYap.Size = new System.Drawing.Size(131, 83);
+            this.girisYap.TabIndex = 5;
+            this.girisYap.Text = "Giris";
+            this.girisYap.UseVisualStyleBackColor = true;
+            this.girisYap.Click += new System.EventHandler(this.girisYap_Click);
             // 
-            // button3
+            // textBoxKullanıcıAdı
             // 
-            this.button3.Location = new System.Drawing.Point(439, 229);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(194, 126);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "buttonComboboxaYaz";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.textBoxKullanıcıAdı.Location = new System.Drawing.Point(568, 142);
+            this.textBoxKullanıcıAdı.Name = "textBoxKullanıcıAdı";
+            this.textBoxKullanıcıAdı.Size = new System.Drawing.Size(334, 29);
+            this.textBoxKullanıcıAdı.TabIndex = 6;
             // 
-            // label1
+            // textBoxSifre
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(830, 189);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "label1";
+            this.textBoxSifre.Location = new System.Drawing.Point(568, 251);
+            this.textBoxSifre.Name = "textBoxSifre";
+            this.textBoxSifre.Size = new System.Drawing.Size(334, 29);
+            this.textBoxSifre.TabIndex = 7;
+            this.textBoxSifre.UseSystemPasswordChar = true;
+            // 
+            // labelSonuc
+            // 
+            this.labelSonuc.AutoSize = true;
+            this.labelSonuc.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelSonuc.Location = new System.Drawing.Point(616, 469);
+            this.labelSonuc.Name = "labelSonuc";
+            this.labelSonuc.Size = new System.Drawing.Size(89, 37);
+            this.labelSonuc.TabIndex = 8;
+            this.labelSonuc.Text = "Sonuc";
+            this.labelSonuc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelSonuc.UseMnemonic = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(943, 189);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(616, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 15);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "labelDegiş";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.Size = new System.Drawing.Size(250, 37);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Kullanıcı Adını Girin";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label3.Location = new System.Drawing.Point(640, 216);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(156, 32);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Sifrenizi Girin";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1220, 607);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1176, 630);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.comboBoxArabalar);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBoxMessage);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.labelSonuc);
+            this.Controls.Add(this.textBoxSifre);
+            this.Controls.Add(this.textBoxKullanıcıAdı);
+            this.Controls.Add(this.girisYap);
+            this.Controls.Add(this.yazıyıLabeleEKle);
+            this.Controls.Add(this.textboxyazısı);
+            this.Controls.Add(this.textBox1);
+            this.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -127,14 +158,15 @@ namespace WinFormsApp1
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBoxMessage;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBoxArabalar;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label textboxyazısı;
+        private System.Windows.Forms.Button yazıyıLabeleEKle;
+        private System.Windows.Forms.Button girisYap;
+        private System.Windows.Forms.TextBox textBoxKullanıcıAdı;
+        private System.Windows.Forms.TextBox textBoxSifre;
+        private System.Windows.Forms.Label labelSonuc;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

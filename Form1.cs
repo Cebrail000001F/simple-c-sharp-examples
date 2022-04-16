@@ -8,33 +8,68 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinFormsApp1
+namespace c_sharp_form_ornegi
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void girisYap_Click(object sender, EventArgs e)
         {
-            textBoxMessage.Text = "selam";
+            string KullanıcıAdı = textBoxKullanıcıAdı.Text;
+            string Sifre = textBoxSifre.Text;
+
+            if (KullanıcıAdı=="123456789")
+            {
+                if (Sifre=="123456789")
+                {
+                    labelSonuc.Text = "Giris Basarılı";
+                }
+                else
+                {
+                    labelSonuc.Text = "Giris Basarısız,Lutfen kontrol  edip tekrar deneyin";
+                }
+            }
+            else
+            {
+                labelSonuc.Text = "Giris Basarısız,Lutfen kontrol  edip tekrar deneyin";
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            textBoxMessage.Text = "";
-        }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            comboBoxArabalar.Items.Add(textBoxMessage.Text);
-        }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-            label1.Text = textBoxMessage.Text;
-        }
+
+
+
+
+
+        //private void Form1_DoubleClick_1(object sender, EventArgs e)
+        //{
+        //    label1.Visible = true;
+        //}
+
+        //private void label1_Click_1(object sender, EventArgs e)
+        //{
+        //    label2.Visible = true;
+        //}
+
+        //texboxtaki yazıyı label'e aktarma
+        //private void textBox1_TextChanged(object sender, EventArgs e)
+        //{
+        //    string yazı = textBox1.Text;
+        //    textboxyazısı.Text = yazı;
+        //}
+
+        //butona tıkladıgında texboxtaki yazıyı label'e aktarma
+
+        //private void yazıyıLabeleEKle_Click(object sender, EventArgs e)
+        //{
+        //    string yazı = textBox1.Text;
+        //    textboxyazısı.Text = yazı;
+        //}
     }
 }
